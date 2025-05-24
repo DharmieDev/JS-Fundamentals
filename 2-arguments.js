@@ -1,17 +1,9 @@
-let toPrint =  function arguments(arg1){
-    console.log(arg1);
+const args = process.argv.slice(2);
+
+if (args.length === 0) {
+  console.log("No argument");
+} else if (args.length === 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
 }
-
-toPrint("Arguments found")
-
-let print =  function arguments(arg2){
-    console.log(arg2);
-}
-
-print("Argument found")
-
-let allow =  function arguments(arg3){
-    console.log(arg3);
-}
-
-allow("No Argument")
