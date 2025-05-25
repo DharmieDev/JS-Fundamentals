@@ -4,7 +4,7 @@ if(argument.length === 4){
 } else if(argument.length === 3){
   console.log("Argument found")
 } else{
-  console.log("No arguments found")
+  console.log("No argument")
 }
 
 
