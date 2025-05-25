@@ -1,7 +1,11 @@
-const argument = process.argv;
-if(argument.length < 3 ){
+const argument = process.argv[2];
+const myNumber = parseInt(argument)
+if(argument === undefined ){
     console.log("Not a number")
-    return;
-} else{
-    console.log("My number:" ,Number(argument[2]))
+} 
+else if(isNaN(argument)){
+    console.log("Not a number")
+}
+else{
+    console.log(`My number: ${myNumber}`)
 }
